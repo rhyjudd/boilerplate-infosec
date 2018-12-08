@@ -5,6 +5,7 @@
 
 var express = require('express'); // Do Not Edit
 var app = express();              // Do Not Edit
+const helmet = require('helmet');
 
 // ----
 
@@ -31,6 +32,7 @@ var app = express();              // Do Not Edit
 
 // Use `helmet.hidePoweredBy()``
 
+app.use(helmet.hidePoweredBy());
 
 
 /** 3) Mitigate the risk of clickjacking - `helmet.frameguard()` */
