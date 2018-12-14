@@ -71,6 +71,7 @@ app.use(helmet.hidePoweredBy());
 
 // Use `helmet.xssFilter()`
 
+app.use(helmet.xssFilter());
 
 
 /** 5) Avoid inferring the response MIME type - `helmet.noSniff()` */
