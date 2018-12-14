@@ -138,7 +138,7 @@ app.use(helmet.hsts({
 
 // Use `helmet.dnsPrefetchControl()`
 
-
+app.use(helmet.dnsPrefetchControl());
 
 /** 9) Disable Client-Side Caching - `helmet.noCache()` */
 
@@ -150,7 +150,7 @@ app.use(helmet.hsts({
 
 // Use helmet.noCache()
 
-
+app.use(helmet.noCache());
 
 /** 10) Content Security Policy - `helmet.contentSecurityPolicy()` */
 
